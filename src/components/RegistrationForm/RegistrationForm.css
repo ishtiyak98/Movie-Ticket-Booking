@@ -1,0 +1,13 @@
+.ant-form-item .ant-form-item-label>label {
+    @apply text-base text-[16px] text-gray-600;
+}
+
+.input-style {
+    @apply outline-none border-2 text-primary border-primary px-2 py-2 
+    rounded min-w-[300px] lg:min-w-[350px] text-base;
+}
+
+.submit-btn{
+    @apply text-center w-full mt-4 mb-2 text-white hover:text-secondary tracking-wide uppercase 
+    py-3 rounded;
+}
