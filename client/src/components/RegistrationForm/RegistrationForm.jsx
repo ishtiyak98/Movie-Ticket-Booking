@@ -2,11 +2,15 @@ import React from "react";
 import { Form, Divider } from "antd";
 import "./RegistrationForm.css";
 import { Link } from "react-router-dom";
+import { useRegisterMutation } from "../../fetures/userAuth/userAuthApi";
 
 function RegistrationForm() {
+  const [register, { isLoading, error, isSuccess }] = useRegisterMutation();
   const handleRegistration = (values) => {
     console.log(values);
+    register(values);
   };
+
   return (
     <div className="p-5 lg:p-7 bg-white rounded space-y-4">
       <h2 className="text-primary text-center font-bold text-xl lg:text-2xl">
